@@ -1,0 +1,251 @@
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+INFO:NP.df_utils:Major frequency MS corresponds to [99.603]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:NP.df_utils:Returning df with no ID column
+INFO:NP.df_utils:Returning df with no ID column
+INFO:__main__:Dataset size:264
+INFO:__main__:Train dataset size:215
+INFO:__main__:Validation dataset size:37
+WARNING:NP.forecaster:When Global modeling with local normalization, metrics are displayed in normalized scale.
+INFO:NP.df_utils:Major frequency MS corresponds to [99.535]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:NP.config:Setting normalization to global as only one dataframe provided for training.
+INFO:NP.utils:Disabling weekly seasonality. Run NeuralProphet with weekly_seasonality=True to override this.
+INFO:NP.utils:Disabling daily seasonality. Run NeuralProphet with daily_seasonality=True to override this.
+WARNING:py.warnings:/u/halle/zhouni/home_at/.local/lib/python3.10/site-packages/torch/cuda/__init__.py:546: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+
+INFO:NP.df_utils:Major frequency MS corresponds to [91.667]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:__main__:{'learning_rate': 0.001, 'normalize': 'minmax', 'epochs': 300, 'batch_size': 3}
+INFO:__main__:training MAE:5.73399543762207
+INFO:__main__:training RMSE:6.779679298400879
+INFO:__main__:validation MAE:8.260990142822266
+INFO:__main__:validation RMSE:10.245092391967773
+INFO:__main__:test MAE:7.91710901260376
+INFO:__main__:test RMSE:9.362044334411621
+INFO:__main__:---------------------------------
+WARNING:NP.forecaster:When Global modeling with local normalization, metrics are displayed in normalized scale.
+INFO:NP.df_utils:Major frequency MS corresponds to [99.535]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:NP.config:Setting normalization to global as only one dataframe provided for training.
+INFO:NP.utils:Disabling weekly seasonality. Run NeuralProphet with weekly_seasonality=True to override this.
+INFO:NP.utils:Disabling daily seasonality. Run NeuralProphet with daily_seasonality=True to override this.
+INFO:NP.df_utils:Major frequency MS corresponds to [91.667]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:__main__:{'learning_rate': 0.001, 'normalize': 'minmax', 'epochs': 300, 'batch_size': 6}
+INFO:__main__:training MAE:11.272049903869629
+INFO:__main__:training RMSE:14.513239860534668
+INFO:__main__:validation MAE:10.9115571975708
+INFO:__main__:validation RMSE:13.182690620422363
+INFO:__main__:test MAE:9.755692481994629
+INFO:__main__:test RMSE:11.848995208740234
+INFO:__main__:---------------------------------
+WARNING:NP.forecaster:When Global modeling with local normalization, metrics are displayed in normalized scale.
+INFO:NP.df_utils:Major frequency MS corresponds to [99.535]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:NP.config:Setting normalization to global as only one dataframe provided for training.
+INFO:NP.utils:Disabling weekly seasonality. Run NeuralProphet with weekly_seasonality=True to override this.
+INFO:NP.utils:Disabling daily seasonality. Run NeuralProphet with daily_seasonality=True to override this.
+INFO:NP.df_utils:Major frequency MS corresponds to [91.667]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:__main__:{'learning_rate': 0.001, 'normalize': 'minmax', 'epochs': 300, 'batch_size': 12}
+INFO:__main__:training MAE:7.050505638122559
+INFO:__main__:training RMSE:9.05378246307373
+INFO:__main__:validation MAE:9.566791534423828
+INFO:__main__:validation RMSE:11.66066837310791
+INFO:__main__:test MAE:9.2666597366333
+INFO:__main__:test RMSE:11.241129875183105
+INFO:__main__:---------------------------------
+WARNING:NP.forecaster:When Global modeling with local normalization, metrics are displayed in normalized scale.
+INFO:NP.df_utils:Major frequency MS corresponds to [99.535]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:NP.config:Setting normalization to global as only one dataframe provided for training.
+INFO:NP.utils:Disabling weekly seasonality. Run NeuralProphet with weekly_seasonality=True to override this.
+INFO:NP.utils:Disabling daily seasonality. Run NeuralProphet with daily_seasonality=True to override this.
+INFO:NP.df_utils:Major frequency MS corresponds to [91.667]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:__main__:{'learning_rate': 0.001, 'normalize': 'soft', 'epochs': 300, 'batch_size': 3}
+INFO:__main__:training MAE:5.8602681159973145
+INFO:__main__:training RMSE:6.90680456161499
+INFO:__main__:validation MAE:8.609564781188965
+INFO:__main__:validation RMSE:10.624475479125977
+INFO:__main__:test MAE:8.139396667480469
+INFO:__main__:test RMSE:9.780404090881348
+INFO:__main__:---------------------------------
+WARNING:NP.forecaster:When Global modeling with local normalization, metrics are displayed in normalized scale.
+INFO:NP.df_utils:Major frequency MS corresponds to [99.535]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:NP.config:Setting normalization to global as only one dataframe provided for training.
+INFO:NP.utils:Disabling weekly seasonality. Run NeuralProphet with weekly_seasonality=True to override this.
+INFO:NP.utils:Disabling daily seasonality. Run NeuralProphet with daily_seasonality=True to override this.
+INFO:NP.df_utils:Major frequency MS corresponds to [91.667]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:__main__:{'learning_rate': 0.001, 'normalize': 'soft', 'epochs': 300, 'batch_size': 6}
+INFO:__main__:training MAE:7.619273662567139
+INFO:__main__:training RMSE:9.752593040466309
+INFO:__main__:validation MAE:12.948275566101074
+INFO:__main__:validation RMSE:14.785578727722168
+INFO:__main__:test MAE:13.071563720703125
+INFO:__main__:test RMSE:15.52849292755127
+INFO:__main__:---------------------------------
+WARNING:NP.forecaster:When Global modeling with local normalization, metrics are displayed in normalized scale.
+INFO:NP.df_utils:Major frequency MS corresponds to [99.535]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:NP.config:Setting normalization to global as only one dataframe provided for training.
+INFO:NP.utils:Disabling weekly seasonality. Run NeuralProphet with weekly_seasonality=True to override this.
+INFO:NP.utils:Disabling daily seasonality. Run NeuralProphet with daily_seasonality=True to override this.
+INFO:NP.df_utils:Major frequency MS corresponds to [91.667]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:__main__:{'learning_rate': 0.001, 'normalize': 'soft', 'epochs': 300, 'batch_size': 12}
+INFO:__main__:training MAE:16.824621200561523
+INFO:__main__:training RMSE:24.332260131835938
+INFO:__main__:validation MAE:8.268790245056152
+INFO:__main__:validation RMSE:10.092320442199707
+INFO:__main__:test MAE:9.20925521850586
+INFO:__main__:test RMSE:11.32640552520752
+INFO:__main__:---------------------------------
+WARNING:NP.forecaster:When Global modeling with local normalization, metrics are displayed in normalized scale.
+INFO:NP.df_utils:Major frequency MS corresponds to [99.535]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:NP.config:Setting normalization to global as only one dataframe provided for training.
+INFO:NP.utils:Disabling weekly seasonality. Run NeuralProphet with weekly_seasonality=True to override this.
+INFO:NP.utils:Disabling daily seasonality. Run NeuralProphet with daily_seasonality=True to override this.
+INFO:NP.df_utils:Major frequency MS corresponds to [91.667]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:__main__:{'learning_rate': 0.001, 'normalize': 'standardize', 'epochs': 300, 'batch_size': 3}
+INFO:__main__:training MAE:6.999212741851807
+INFO:__main__:training RMSE:8.472118377685547
+INFO:__main__:validation MAE:10.618947982788086
+INFO:__main__:validation RMSE:12.423089027404785
+INFO:__main__:test MAE:10.035151481628418
+INFO:__main__:test RMSE:12.117496490478516
+INFO:__main__:---------------------------------
+WARNING:NP.forecaster:When Global modeling with local normalization, metrics are displayed in normalized scale.
+INFO:NP.df_utils:Major frequency MS corresponds to [99.535]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:NP.config:Setting normalization to global as only one dataframe provided for training.
+INFO:NP.utils:Disabling weekly seasonality. Run NeuralProphet with weekly_seasonality=True to override this.
+INFO:NP.utils:Disabling daily seasonality. Run NeuralProphet with daily_seasonality=True to override this.
+INFO:NP.df_utils:Major frequency MS corresponds to [91.667]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:__main__:{'learning_rate': 0.001, 'normalize': 'standardize', 'epochs': 300, 'batch_size': 6}
+INFO:__main__:training MAE:7.290620803833008
+INFO:__main__:training RMSE:9.270340919494629
+INFO:__main__:validation MAE:11.157526969909668
+INFO:__main__:validation RMSE:13.160948753356934
+INFO:__main__:test MAE:10.79586410522461
+INFO:__main__:test RMSE:12.878363609313965
+INFO:__main__:---------------------------------
+WARNING:NP.forecaster:When Global modeling with local normalization, metrics are displayed in normalized scale.
+INFO:NP.df_utils:Major frequency MS corresponds to [99.535]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:NP.config:Setting normalization to global as only one dataframe provided for training.
+INFO:NP.utils:Disabling weekly seasonality. Run NeuralProphet with weekly_seasonality=True to override this.
+INFO:NP.utils:Disabling daily seasonality. Run NeuralProphet with daily_seasonality=True to override this.
+INFO:NP.df_utils:Major frequency MS corresponds to [91.667]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:__main__:{'learning_rate': 0.001, 'normalize': 'standardize', 'epochs': 300, 'batch_size': 12}
+INFO:__main__:training MAE:7.972209930419922
+INFO:__main__:training RMSE:10.566045761108398
+INFO:__main__:validation MAE:10.301481246948242
+INFO:__main__:validation RMSE:12.032803535461426
+INFO:__main__:test MAE:10.294107437133789
+INFO:__main__:test RMSE:12.479301452636719
+INFO:__main__:---------------------------------
+WARNING:NP.forecaster:When Global modeling with local normalization, metrics are displayed in normalized scale.
+INFO:NP.df_utils:Major frequency MS corresponds to [99.535]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:NP.config:Setting normalization to global as only one dataframe provided for training.
+INFO:NP.utils:Disabling weekly seasonality. Run NeuralProphet with weekly_seasonality=True to override this.
+INFO:NP.utils:Disabling daily seasonality. Run NeuralProphet with daily_seasonality=True to override this.
+INFO:NP.df_utils:Major frequency MS corresponds to [91.667]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:__main__:{'learning_rate': 0.008, 'normalize': 'minmax', 'epochs': 300, 'batch_size': 3}
+INFO:__main__:training MAE:5.588464260101318
+INFO:__main__:training RMSE:6.6735358238220215
+INFO:__main__:validation MAE:9.0449857711792
+INFO:__main__:validation RMSE:11.0784330368042
+INFO:__main__:test MAE:8.7764253616333
+INFO:__main__:test RMSE:10.37153148651123
+INFO:__main__:---------------------------------
+WARNING:NP.forecaster:When Global modeling with local normalization, metrics are displayed in normalized scale.
+INFO:NP.df_utils:Major frequency MS corresponds to [99.535]% of the data.
+INFO:NP.df_utils:Defined frequency is equal to major frequency - MS
+INFO:NP.config:Setting normalization to global as only one dataframe provided for training.
+INFO:NP.utils:Disabling weekly seasonality. Run NeuralProphet with weekly_seasonality=True to override this.
+INFO:NP.utils:Disabling daily seasonality. Run NeuralProphet with daily_seasonality=True to override this.
+WARNING:py.warnings:/u/halle/zhouni/home_at/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py:48: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+  rank_zero_warn("Detected KeyboardInterrupt, attempting graceful shutdown...")
+
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+WARNING:py.warnings:/tmp/ipykernel_3896580/2168633973.py:15: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_name.sort_values(by='MONAT', inplace=True, ascending=True)
+
+WARNING:py.warnings:/tmp/ipykernel_3896580/2168633973.py:15: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_name.sort_values(by='MONAT', inplace=True, ascending=True)
+
+WARNING:py.warnings:/tmp/ipykernel_3896580/2168633973.py:15: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_name.sort_values(by='MONAT', inplace=True, ascending=True)
+
+WARNING:py.warnings:/tmp/ipykernel_3896580/2168633973.py:15: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_name.sort_values(by='MONAT', inplace=True, ascending=True)
+
+WARNING:py.warnings:/tmp/ipykernel_3896580/2168633973.py:15: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_name.sort_values(by='MONAT', inplace=True, ascending=True)
+
+WARNING:py.warnings:/tmp/ipykernel_3896580/2168633973.py:15: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_name.sort_values(by='MONAT', inplace=True, ascending=True)
+
+WARNING:py.warnings:/tmp/ipykernel_3896580/2168633973.py:15: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_name.sort_values(by='MONAT', inplace=True, ascending=True)
+
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
+INFO:__main__:(252, 2)
+INFO:__main__:(12, 2)
