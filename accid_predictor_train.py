@@ -1,15 +1,16 @@
-import os
+import shutil
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import xgboost as xgb
-from neuralprophet import NeuralProphet, save, load
+from neuralprophet import NeuralProphet, save
 import itertools
 import logging
+import pickle
 sns.set_style("whitegrid")
 plt.style.use('seaborn-v0_8-whitegrid')
-os.remove('./train_log/neuralprophet/train.log')
+shutil.rmtree('./lightning_logs', ignore_errors=True)
+shutil.rmtree('./train_log/neuralprophet/train.log', ignore_errors=True)
 
 df = pd.read_csv('./data/monatszahlen2307_verkehrsunfaelle_10_07_23_nosum.csv')
 df.dropna(axis=0, subset=['WERT'], inplace=True)
@@ -42,6 +43,7 @@ logging.basicConfig(filename='./train_log/neuralprophet/train.log', encoding='ut
 logger = logging.getLogger(__name__)
 
 for i in range(len(df_list)):
+    plt.subplots()
     sns.lineplot(x='MONAT', y='WERT', data=df_list[i]).set_title(df_names[i])
     plt.savefig('./train_log/neuralprophet/' + df_names[i] +'.png')
     plt.show()
@@ -59,7 +61,7 @@ for i in range(len(df_list)):
     logger.info(data_test.shape)
     print(data_test.shape)
     
-    model = NeuralProphet(yearly_seasonality='auto', seasonality_mode='additive')
+    model = NeuralProphet(seasonality_mode='additive')
     data_train, data_val = model.split_df(data_train_val, freq='MS', valid_p=0.15)
     logger.info("Dataset size:" + str(len(data)))
     logger.info("Train dataset size:" + str(len(data_train)))
@@ -72,7 +74,8 @@ for i in range(len(df_list)):
         'learning_rate': [0.001, 0.008, 0.01, 0.1],
         'normalize': ['minmax', 'soft', 'standardize'],
         'epochs': [300],
-        'batch_size': [3, 6, 12]
+        'batch_size': [3, 6, 12],
+        'yearly_seasonality': [True, False]
     }
 
     all_params = [dict(zip(param_grid.keys(), v)) for v in itertools.product(*param_grid.values())]
@@ -80,7 +83,7 @@ for i in range(len(df_list)):
     maes_train = []; rmses_train = []; maes_val = []; rmses_val = []; maes_test = []; rmses_test = []
 
     for params in all_params:
-        m = NeuralProphet(**params, yearly_seasonality='auto', seasonality_mode='additive') 
+        m = NeuralProphet(**params, seasonality_mode='additive') 
         m = m.add_country_holidays(country_name='DE')
         m.set_plotting_backend('plotly-static')
         metrics_train = m.fit(data_train, validation_df=data_val, freq='MS', early_stopping=False, progress=False)
@@ -124,7 +127,7 @@ for i in range(len(df_list)):
     logger.info(best_params)
     print(best_params)
     
-    model = NeuralProphet(**best_params, yearly_seasonality='auto', seasonality_mode='additive') 
+    model = NeuralProphet(**best_params, seasonality_mode='additive') 
     model = model.add_country_holidays(country_name='DE')
     model.set_plotting_backend('plotly-static')
     metrics_train = model.fit(data_train, validation_df=data_val, freq='MS', early_stopping=False, progress=False)
@@ -168,5 +171,7 @@ for i in range(len(df_list)):
     fig_components = model.plot_components(forecast)
     fig_model = model.plot_parameters()
     
-    save(model, './models/neuralprophet/model_' + df_names[i][5:] +'.np')
+    #save(model, './models/neuralprophet/model_' + df_names[i][5:] +'.np')
+    with open('./models/neuralprophet/model_' + df_names[i][5:] +'.pkl', 'wb') as f:
+        pickle.dump(model, f)
     logger.info('model_'+ df_names[i][5:] +' saved.')

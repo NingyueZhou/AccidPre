@@ -2,4 +2,4 @@ uvicorn
 fastapi
 pydantic
 pandas
-neuralprophet
+pickle
