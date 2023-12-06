@@ -22,5 +22,5 @@ async def predict_endpoint(payload: DateTimeIn):
     return {"prediction": predicted_accid}
 
 if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=4343)
+    uvicorn.run(app, host='127.0.0.1', port=4343, log_level="info")
 #uvicorn app:app --reload
