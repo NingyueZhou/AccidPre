@@ -56,12 +56,14 @@ Make sure you've got the basics covered before joining our magical journey:
 
 ```
 Input:
+
 {
 "year":2024,
 "month":10
 }
 
 Output:
+
 {
 "prediction":24
 }
