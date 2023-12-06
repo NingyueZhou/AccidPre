@@ -9,7 +9,7 @@ Hey there, curious minds! Welcome to AccidPre, where we predict accidents with t
 
 ## 🚦 Overview
 
-Ever wished you could predict when and where accidents might happen? No? Well, we did it anyway! Introducing AccidPre, your go-to AI application for predicting the number of accidents for a specific category and datetime. Buckle up, not just for safety, but also for the ride of data-driven fortune-telling!
+Ever wished you could predict how many accidents might happen in a month? No? Well, we did it anyway! Introducing AccidPre, your go-to AI application for predicting the number of accidents in Munich for a specific category and datetime. Buckle up, not just for safety, but also for the ride of data-driven fortune-telling!
 
 ## 🌟 Features
 
@@ -52,23 +52,27 @@ Make sure you've got the basics covered before joining our magical journey:
 2. Choose your accident category and datetime like you're picking tarot cards.
 3. Revel in the magic of our AI predicting the number of accidents.
 
-## 🧙 Example
+#### Example
 
-```bash
+```
 Input:
-  Accident Category: Wacky Racers Incident
-  Datetime: 2023-11-15 14:30
+{
+"year":2024,
+"month":10
+}
 
 Output:
-  Predicted Number of Accidents: A wild mix of 42 and a flock of rubber chickens 🐔✨
+{
+"prediction":24
+}
 ```
 
 ## 🎉 Contributing
 
-Feel like adding more magic? Contribute your enchantments through pull requests. We're open to anything magical!
+Feel like adding more magic? Contribute your enchantments through pull requests. AccidPre is open to anything magical!
 
 ## 🙏 Acknowledgments
 
-Huge thanks to the mystical [Data Source Provider] for providing the magical accident data. You're the real MVP of our magical journey.
+Huge thanks to the Digital Product School for providing this interesting challenge for all potential future AI Engineers! And also thanks to the mystical München Open Data Portal for providing the magical accident data. You're the real MVP of our magical journey.
 
-Now go ahead, embrace the magic of AccidPre, and remember: Accidents may be unpredictable, but our predictions are pure magic! 🌟✨
+Now go ahead, embrace the magic of AccidPre, and remember: Accidents may be unpredictable, but AccidPre's predictions are pure magic! 🌟✨
