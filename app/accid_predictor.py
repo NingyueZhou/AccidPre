@@ -32,7 +32,7 @@ def predict_accid(year, month, category='alk', type='ins'):
     else:
         data = pd.read_csv('./data/data_' + category + '_' + type + '.csv')
         
-        with open('./models/neuralprophet/model_' + category + '_' + type +'.pkl', 'rb') as f:
+        with open('../models/neuralprophet/model_' + category + '_' + type +'.pkl', 'rb') as f:
             model = pickle.load(f)
             model.restore_trainer()
         
