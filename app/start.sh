@@ -5,5 +5,5 @@ cd "$(dirname "$0")"
 
 sudo service nginx restart
 
-uvicorn app:app --reload --host 0.0.0.0 --log-level "info" -uds "/tmp/uvicorn.sock"
+uvicorn app:app --reload --host 0.0.0.0 --log-level info --forwarded-allow-ips='*' --uds='/tmp/uvicorn.sock' --proxy-headers
 #python3 -m uvicorn app:app --reload --host 0.0.0.0 --log-level "info"
