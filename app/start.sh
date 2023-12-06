@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#cd "$(dirname "$0")"
+cd "$(dirname "$0")"
 #echo "$(pwd)"
 
 sudo service nginx restart
