@@ -33,7 +33,7 @@ Make sure you've got the basics covered before joining our magical journey:
 
 2. Navigate to the project directory (no magic spells required):
    ```bash
-   cd AccidPre
+   cd AccidPre/app
    ```
 
 3. Install the wizardry (dependencies):
@@ -54,7 +54,7 @@ Make sure you've got the basics covered before joining our magical journey:
 
 #### Example
 
-```
+```bash
 Input:
 
 {
@@ -75,6 +75,7 @@ Feel like adding more magic? Contribute your enchantments through pull requests.
 
 ## 🙏 Acknowledgments
 
-Huge thanks to the Digital Product School for providing this interesting challenge for all potential future AI Engineers! And also thanks to the mystical München Open Data Portal for providing the magical accident data. You're the real MVP of our magical journey.
+Huge thanks to the Digital Product School for providing this interesting challenge for all potential future AI Engineers!
+And also thanks to the mystical München Open Data Portal for providing the magical accident data.
 
 Now go ahead, embrace the magic of AccidPre, and remember: Accidents may be unpredictable, but AccidPre's predictions are pure magic! 🌟✨
