@@ -1,6 +1,7 @@
 import pickle
 import pandas as pd
 from datetime import datetime
+from neuralprophet import load
 
 def calc_periods(date):
     
@@ -32,9 +33,11 @@ def predict_accid(year, month, category='alk', type='ins'):
     else:
         data = pd.read_csv('../data/data_' + category + '_' + type + '.csv')
         
-        with open('../models/model_' + category + '_' + type +'.pkl', 'rb') as f:
-            model = pickle.load(f)
-            model.restore_trainer()
+        # with open('../models/neuralprophet/model_' + category + '_' + type +'.pkl', 'rb') as f:
+        #     model = pickle.load(f)
+        #     model.restore_trainer()
+            
+        model = load('../models/neuralprophet/model_' + category + '_' + type +'.np')
         
         future = model.make_future_dataframe(data, periods=periods, n_historic_predictions=len(data))
         future.sort_values(by='ds', inplace=True, ascending=True)
