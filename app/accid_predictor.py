@@ -25,14 +25,14 @@ def predict_accid(year, month, category='alk', type='ins'):
         predicted_accid = -1
     
     elif periods == 0:
-        data = pd.read_csv('../data/data_' + category + '_' + type + '.csv')
+        data = pd.read_csv('./data/data_' + category + '_' + type + '.csv')
         print(data.loc[data.ds == date, 'y'].values)
         predicted_accid = data.loc[data.ds == str(date)[:10], 'y']
         
     else:
-        data = pd.read_csv('../data/data_' + category + '_' + type + '.csv')
+        data = pd.read_csv('./data/data_' + category + '_' + type + '.csv')
         
-        with open('../models/neuralprophet/model_' + category + '_' + type +'.pkl', 'rb') as f:
+        with open('./models/neuralprophet/model_' + category + '_' + type +'.pkl', 'rb') as f:
             model = pickle.load(f)
             model.restore_trainer()
         
