@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI
 from pydantic import BaseModel
-from accid_predictor import predict_accid
+from app.accid_predictor import predict_accid
 
 app = FastAPI()
 
